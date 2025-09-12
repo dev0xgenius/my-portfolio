@@ -4,10 +4,13 @@ const blogs = [{}, {}];
 
 export default function BlogOverview() {
     return (
-        <div className="container">
-            <ul>
+        <div className="container px-2">
+            <ul className="list flex-row max-w-full overflow-auto gap-4">
                 {blogs.map((blog, index) => (
-                    <li key={index}>
+                    <li
+                        key={index}
+                        className="list-row min-w-fit rounded-sm border border-black"
+                    >
                         <BlogOverviewCard />
                     </li>
                 ))}

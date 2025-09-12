@@ -17,11 +17,14 @@ const projects: ProjectCardProps[] = [
 
 export default function Projects() {
     return (
-        <div>
-            <h2>My Projects</h2>
-            <ul>
+        <div className="px-6">
+            <h2 className="mb-2">My Projects</h2>
+            <ul className="list gap-4">
                 {projects.map((_, index) => (
-                    <li key={index} className="project">
+                    <li
+                        key={index}
+                        className="list-row border border-black rounded-sm"
+                    >
                         <ProjectCard />
                     </li>
                 ))}

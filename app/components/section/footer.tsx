@@ -1,24 +1,24 @@
 export default function Footer() {
     return (
-        <footer>
-            <div className="container">
-                <form>
-                    <div>
-                        <h3>Ship rn.</h3>
-                        <p>{`genius(you) -> v0 -> genius(me) -> ship`}</p>
-                    </div>
-                    <input placeholder="What do your friends call you? (chad)" />
-                    <input type="email" />
-                    <textarea placeholder="I'll need to know how the site should look like, mumbo jumbo is allowed"></textarea>
-                    <a href="#">How it works?</a>
-                </form>
-                <div>
-                    <span>@dev0xgenius</span>
-                    <span>
-                        Copyright (c) 2025 Author. All Rights Reserved. l
+        <footer className="p-4">
+            <form className="flex flex-col gap-2">
+                <h3 className="font-semibold text-xl">Reach Out</h3>
+                <div className="flex flex-col gap-2">
+                    <label className="input block">
+                        <input type="email" placeholder="youremail@gmail.com" />
+                    </label>
+                    <textarea
+                        placeholder="Write a description of the kind of web site/app you want...."
+                        className="textarea"
+                    ></textarea>
+                </div>
+                <button className="btn rounded-sm">Start Building</button>
+                <div className="bg-accent rounded-sm p-2">
+                    <span className="text-sm">
+                        Site typically ready within 5mins
                     </span>
                 </div>
-            </div>
+            </form>
         </footer>
     );
 }
