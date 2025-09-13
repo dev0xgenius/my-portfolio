@@ -10,8 +10,8 @@ export interface ProjectCardProps {
 
 export default function ProjectCard() {
     return (
-        <div className="card w-full max-w-md rounded-md shadow">
-            <figure className="image-full ">
+        <div className="card w-full max-w-md rounded-md">
+            <figure className="image-full">
                 <Image
                     alt="project preview"
                     src="/nice-bg.jpg"
@@ -19,7 +19,7 @@ export default function ProjectCard() {
                     height={420}
                 />
             </figure>
-            <div className="card-body border p-4 gap-4 pt-2 rounded-b-md border-gray-300">
+            <div className="card-body p-2 gap-4 shadow rounded-b-md">
                 <div>
                     <span className="card-title min-w-max">
                         Interactive Comments Section
