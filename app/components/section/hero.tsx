@@ -17,20 +17,19 @@ function SocialLink({ href, src, description }: SocialLinkProps) {
 
 export function Hero() {
     return (
-        <div>
+        <div className="-mt-4">
             <div className="card">
-                <div className="card-body p-2">
-                    <h1 className="text-2xl card-title">
+                <div className="card-body px-4 gap-4">
+                    <h1 className="text-4xl card-title justify-center">
                         Fullstack Web Developer
                     </h1>
-                    <div className="container">
+                    <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Minus, sapiente. Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Dolore, itaque.
-                    </div>
+                    </p>
                 </div>
-                <div className="p-2">
-                    <div className="flex gap-2 max-w-fit">
+                <div className="px-4">
+                    <div className="flex gap-2 max-w-fit ">
                         <SocialLink
                             href="#"
                             src="/github-mark.svg"

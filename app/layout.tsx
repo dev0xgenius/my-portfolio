@@ -15,7 +15,7 @@ export default function RootLayout({
     return (
         <html lang="en" data-theme="cupcake">
             <body className={`antialiased`}>
-                <div className="container">
+                <div className="flex flex-col gap-12">
                     <Header />
                     {children}
                 </div>

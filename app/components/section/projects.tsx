@@ -7,18 +7,11 @@ const projects: ProjectCardProps[] = [
         subtitle: "Real-time updates and Auth functionality",
         stack: [],
     },
-    {
-        img: "/somewhere.png",
-        title: "Interactive Comments Section",
-        subtitle: "Real-time updates and Auth functionality",
-        stack: [],
-    },
 ];
 
 export default function Projects() {
     return (
         <div className="px-2 flex flex-col gap-4">
-            {/* <h2>My Projects</h2> */}
             <ul className="list gap-4 w-full">
                 {projects.map((_, index) => (
                     <li

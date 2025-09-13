@@ -5,11 +5,11 @@ import Projects from "./components/section/projects";
 
 export default function Home() {
     return (
-        <div className="flex flex-col gap-8">
+        <>
             <Hero />
-            <Projects />
             <BlogOverview />
+            <Projects />
             <Footer />
-        </div>
+        </>
     );
 }
