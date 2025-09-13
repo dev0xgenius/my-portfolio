@@ -8,26 +8,30 @@ export interface BlogOverviewCardProps {
 
 export function BlogOverviewCard() {
     return (
-        <div className="container">
-            <div className="card__header">
-                <span className="user__avatar">
+        <div className="card gap-2">
+            <div className="flex items-center gap-2">
+                <span className="avatar">
                     <Image
-                        width={24}
-                        height={24}
-                        src="/somewhere.png"
+                        width={32}
+                        height={32}
+                        src="/dev.png"
                         alt="user's image"
                     />
                 </span>
-                <span className="username">@dev0xgenius</span>
-                <span className="work">Web Designer</span>
+                <div className="flex flex-col">
+                    <span className="username font-semibold">@dev0xgenius</span>
+                    <span className="work">Web Designer</span>
+                </div>
             </div>
-            <span className="card__img"></span>
-            <span className="card__title">Learning Redux?</span>
-            <p className="card__subtitle">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id
-                aspernatur reprehenderit iure et libero quas?
-            </p>
-            <div>
+            <div className="card-body p-0">
+                <span className=""></span>
+                <span className="card-title">Learning Redux?</span>
+                <p className="card__subtitle">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id
+                    aspernatur reprehenderit iure et libero quas?
+                </p>
+            </div>
+            <div className="card-actions">
                 <button>Like</button>
                 <span>123 Likes</span>
             </div>

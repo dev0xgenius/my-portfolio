@@ -19,7 +19,7 @@ export function Hero() {
     return (
         <div>
             <div className="card">
-                <div className="card-body">
+                <div className="card-body p-2">
                     <h1 className="text-2xl card-title">
                         Fullstack Web Developer
                     </h1>
@@ -29,7 +29,7 @@ export function Hero() {
                         adipisicing elit. Dolore, itaque.
                     </div>
                 </div>
-                <div className="px-6">
+                <div className="p-2">
                     <div className="flex gap-2 max-w-fit">
                         <SocialLink
                             href="#"
@@ -43,15 +43,6 @@ export function Hero() {
                         />
                     </div>
                 </div>
-            </div>
-            <div className="hidden">
-                <Image
-                    src="/dev.png"
-                    alt="illustration of dev: angry bird persona"
-                    width={500}
-                    height={500}
-                    className="size-12"
-                />
             </div>
         </div>
     );

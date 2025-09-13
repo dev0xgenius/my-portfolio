@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <footer className="p-4">
+        <footer className="px-4">
             <form className="flex flex-col gap-2">
                 <h3 className="font-semibold text-xl">Reach Out</h3>
                 <div className="flex flex-col gap-2">

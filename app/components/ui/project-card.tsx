@@ -1,3 +1,6 @@
+import Image from "next/image";
+import Link from "next/link";
+
 export interface ProjectCardProps {
     img: string;
     title: string;
@@ -7,20 +10,47 @@ export interface ProjectCardProps {
 
 export default function ProjectCard() {
     return (
-        <div className="container">
-            <span className="project__img"></span>
-            <span className="project__title">Interactive Comments Section</span>
-            <p className="project__subtitle">
-                Real-time updates and Auth Functionality
-            </p>
-            <div className="project__stack">
-                <a href="#">Tailwindcss</a>
-                <a href="#">React</a>
-                <a href="#">Express</a>
-            </div>
-            <div>
-                <a href="#">View Code</a>
-                <a href="#">View Site</a>
+        <div className="card w-full max-w-md rounded-md shadow">
+            <figure className="image-full ">
+                <Image
+                    alt="project preview"
+                    src="/nice-bg.jpg"
+                    width={360}
+                    height={420}
+                />
+            </figure>
+            <div className="card-body border p-4 gap-4 pt-2 rounded-b-md border-gray-300">
+                <div>
+                    <span className="card-title min-w-max">
+                        Interactive Comments Section
+                    </span>
+                    <p>Real-time updates and Auth Functionality</p>
+                </div>
+                <div className="list flex-row gap-1">
+                    <Link href="#" className="badge badge-sm">
+                        Tailwindcss
+                    </Link>
+                    <Link href="#" className="badge badge-sm">
+                        React
+                    </Link>
+                    <Link href="#" className="badge badge-sm">
+                        Express
+                    </Link>
+                </div>
+                <div className="card-actions">
+                    <Link
+                        href="#"
+                        className="btn btn-sm btn-neutral rounded-sm"
+                    >
+                        View Code
+                    </Link>
+                    <Link
+                        href="#"
+                        className="btn btn-outline btn-sm rounded-sm"
+                    >
+                        View Site
+                    </Link>
+                </div>
             </div>
         </div>
     );
