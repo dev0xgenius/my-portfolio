@@ -1,5 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
+import { CgCode } from "react-icons/cg";
+import { LuLink } from "react-icons/lu";
 
 export interface ProjectCardProps {
     img: string;
@@ -10,46 +11,58 @@ export interface ProjectCardProps {
 
 export default function ProjectCard() {
     return (
-        <div className="card w-full max-w-md rounded-md">
-            <figure className="image-full">
+        <div className="card relative w-full sm:max-w-[300px] rounded-2xl">
+            <figure className="absolute top-0 bottom-0 left-0 right-0">
                 <Image
-                    alt="project preview"
+                    width={1080}
+                    height={760}
                     src="/nice-bg.jpg"
-                    width={360}
-                    height={420}
+                    alt="simple image"
+                    className="w-full h-full object-cover opacity-20 -z-10"
                 />
             </figure>
-            <div className="card-body p-2 gap-4 shadow rounded-b-md">
-                <div>
-                    <span className="card-title min-w-max">
-                        Interactive Comments Section
-                    </span>
-                    <p>Real-time updates and Auth Functionality</p>
-                </div>
-                <div className="list flex-row gap-1">
-                    <Link href="#" className="badge badge-sm">
-                        Tailwindcss
-                    </Link>
-                    <Link href="#" className="badge badge-sm">
+            <div className="card-body justify-around gap-8">
+                <div className="flex gap-2 overflow-auto">
+                    <a href="#" className="min-w-fit badge">
                         React
-                    </Link>
-                    <Link href="#" className="badge badge-sm">
-                        Express
-                    </Link>
+                    </a>
+                    <a href="#" className="min-w-fit badge">
+                        node
+                    </a>
+                    <a href="#" className="badge min-w-fit">
+                        websockets
+                    </a>
+                    <a href="#" className="badge min-w-fit">
+                        TailwindCSS
+                    </a>
                 </div>
-                <div className="card-actions">
-                    <Link
-                        href="#"
-                        className="btn btn-sm btn-neutral rounded-sm"
-                    >
-                        View Code
-                    </Link>
-                    <Link
-                        href="#"
-                        className="btn btn-outline btn-sm rounded-sm"
-                    >
+                <figure>
+                    <Image
+                        width={360}
+                        height={480}
+                        src="/nice-bg.jpg"
+                        alt="simple image"
+                        className="rounded-md"
+                    />
+                </figure>
+                <div className="flex flex-col gap-2">
+                    <div className="card-title">
+                        Interactive Comments Section
+                    </div>
+                    <p>
+                        Lorem ipsum opium demma dism rapsu dia beans Lorem ipsum
+                        opium demma dism rapsu dia beans
+                    </p>
+                </div>
+                <div className="card-actions justify-between">
+                    <button className="btn rounded-xl btn-primary">
+                        <LuLink />
                         View Site
-                    </Link>
+                    </button>
+                    <button className="btn rounded-xl btn-secondary">
+                        <CgCode />
+                        view Code
+                    </button>
                 </div>
             </div>
         </div>
