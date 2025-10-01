@@ -7,21 +7,24 @@ const projects: ProjectCardProps[] = [
         subtitle: "Real-time updates and Auth functionality",
         stack: [],
     },
+    {
+        img: "/somewhere.png",
+        title: "Interactive Comments Section",
+        subtitle: "Real-time updates and Auth functionality",
+        stack: [],
+    },
 ];
 
 export default function Projects() {
     return (
         <div className="px-2 flex flex-col gap-4">
-            <ul className="list gap-4 w-full">
+            <div className="carousel rounded-box p-0 h-auto">
                 {projects.map((_, index) => (
-                    <li
-                        key={index}
-                        className="list-row grow p-0 rounded-none gap-0"
-                    >
+                    <div key={index} className="carousel-item w-full">
                         <ProjectCard />
-                    </li>
+                    </div>
                 ))}
-            </ul>
+            </div>
         </div>
     );
 }

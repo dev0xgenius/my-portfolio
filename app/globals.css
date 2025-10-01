@@ -1,14 +1,8 @@
 @import "tailwindcss";
 @plugin "daisyui" {
     themes:
-        light --default,
-        dark --prefersdark,
-        cupcake;
-}
-
-:root {
-    --border: 1px;
-    --radius-field: 0.25rem;
+        lofi --default,
+        black --prefersdark;
 }
 
 @utility debug {

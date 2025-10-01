@@ -13,7 +13,7 @@ export default function Page() {
                     />
                 </figure>
                 <div className="card-body gap-8 p-0 py-8">
-                    <div className="list gap-2">
+                    <div className="list gap-4">
                         <span className="card-title">Multi Step Form</span>
                         <p>
                             Lorem ipsum idet elixir test Lorem ipsum idet elixir

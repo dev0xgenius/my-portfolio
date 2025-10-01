@@ -13,9 +13,9 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" data-theme="cupcake">
+        <html lang="en">
             <body className={`antialiased`}>
-                <div className="flex flex-col gap-8">
+                <div className="container m-auto flex flex-col gap-8">
                     <Header />
                     {children}
                 </div>
